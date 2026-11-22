@@ -1,5 +1,7 @@
 <div align="center">
 
+<img src="docs/icon.svg" width="128" alt="FSB icon" />
+
 # FSB for Android
 
 **Check any X (Twitter) account for shadowbans, right from your phone. Built with Material 3 Expressive.**
@@ -10,11 +12,42 @@ The official Android app for [FSB Sentinel](https://visiuun.com/fsb/).
 [![License: CC BY-NC 4.0](https://img.shields.io/badge/license-CC%20BY--NC%204.0-lightgrey?style=flat-square)](LICENSE)
 [![Build](https://img.shields.io/github/actions/workflow/status/visiuun/fsb-android/build.yml?style=flat-square)](https://github.com/visiuun/fsb-android/actions)
 
+<img src="docs/screenshots/hero.png" alt="FSB for Android: explore board, profile, reach status, live tests, timeline insights and media gallery" width="100%" />
+
 ### [⬇ Download the latest APK](https://github.com/visiuun/fsb-android/releases/latest)
 
 </div>
 
 ---
+
+## The app
+
+<table>
+  <tr>
+    <td><img src="docs/screenshots/app-explore.png" alt="Explore board filtered to clean profiles" /></td>
+    <td><img src="docs/screenshots/app-profile.png" alt="Profile with reach status and visibility score" /></td>
+    <td><img src="docs/screenshots/app-tests.png" alt="Live shadowban tests and health history" /></td>
+    <td><img src="docs/screenshots/app-insights.png" alt="Timeline insights" /></td>
+  </tr>
+  <tr align="center">
+    <td>Explore</td>
+    <td>Profile & reach status</td>
+    <td>Live tests</td>
+    <td>Timeline insights</td>
+  </tr>
+  <tr>
+    <td><img src="docs/screenshots/app-posts.png" alt="Posts feed" /></td>
+    <td><img src="docs/screenshots/app-gallery.png" alt="Media gallery grid" /></td>
+    <td><img src="docs/screenshots/app-viewer.png" alt="Full screen media viewer" /></td>
+    <td><img src="docs/screenshots/app-account.png" alt="Account and appearance settings with OLED black" /></td>
+  </tr>
+  <tr align="center">
+    <td>Posts feed</td>
+    <td>Media gallery</td>
+    <td>Media viewer</td>
+    <td>Account & appearance</td>
+  </tr>
+</table>
 
 ## Features
 
