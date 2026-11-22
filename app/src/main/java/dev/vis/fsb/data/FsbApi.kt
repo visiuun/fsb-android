@@ -222,6 +222,7 @@ object FsbApi {
             screenName = sn,
             name = p.str("name") ?: sn,
             avatar = Net.abs(p.str("avatar")),
+            banner = banner(p),
             bio = p.str("bio").orEmpty(),
             location = p.str("location").orEmpty(),
             createdAt = p.str("joined").orEmpty(),
@@ -319,6 +320,7 @@ object FsbApi {
             username = user,
             name = o.str("name") ?: user,
             avatar = Net.abs(o.str("avatar")),
+            banner = banner(o) ?: banner(o0),
             verified = o.optBoolean("verified"),
             followers = o.optLong("followers"),
             accent = o.str("accent_color"),
@@ -327,6 +329,13 @@ object FsbApi {
             favoritedBy = o0.optInt("favorited_by", o.optInt("favorited_by")),
             favorited = o0.bool("favorited") ?: o.bool("favorited"),
         )
+    }
+
+    /** `banner` is `{url, original}` (url = FSB's cached proxy) or null when the account has none. */
+    private fun banner(o: JSONObject): String? {
+        if (!o.has("banner") || o.isNull("banner")) return null
+        o.optJSONObject("banner")?.let { b -> return Net.abs(b.str("url") ?: b.str("original")) }
+        return Net.abs(o.str("banner"))
     }
 
     private fun parseShadowban(s: JSONObject): Shadowban {

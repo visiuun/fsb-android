@@ -358,7 +358,8 @@ private fun Header(
     val accent = levelColor(levelOf(p.shadowban))
     val cs = MaterialTheme.colorScheme
     Column(Modifier.fillMaxWidth()) {
-        Box(Modifier.fillMaxWidth().aspectRatio(3.6f).background(Brush.linearGradient(listOf(accent.copy(alpha = 0.7f), cs.primaryContainer.copy(alpha = 0.35f))))) {
+        Box(Modifier.fillMaxWidth().aspectRatio(3f).background(Brush.linearGradient(listOf(accent.copy(alpha = 0.7f), cs.primaryContainer.copy(alpha = 0.35f))))) {
+            if (p.banner != null) AsyncImage(p.banner, null, Modifier.fillMaxSize(), contentScale = ContentScale.Crop)
             Box(Modifier.fillMaxSize().background(Brush.verticalGradient(listOf(Color.Black.copy(alpha = 0.35f), Color.Transparent, Color.Transparent))))
         }
         Centered {

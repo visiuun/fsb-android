@@ -122,7 +122,7 @@ fun SearchScreen(vm: AppViewModel) {
         if (direct) {
             item {
                 UserRow(
-                    ProfileSummary(clean, "Check @$clean", null, false, 0, null, null, 0, 0, null), 0, count, w,
+                    ProfileSummary(clean, "Check @$clean", null, null, false, 0, null, null, 0, 0, null), 0, count, w,
                     leading = { ShapeBadge(Icons.Rounded.AlternateEmail, MaterialShapes.Cookie9Sided, size = 48.dp) },
                     subtitle = "Run a live shadowban test",
                 ) { focus.clearFocus(); vm.openProfile(clean) }

@@ -65,8 +65,10 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
+import coil3.compose.AsyncImage
 import dev.vis.fsb.data.Net
 import dev.vis.fsb.data.ProfileSummary
 
@@ -217,8 +219,9 @@ private fun BoardCard(item: ProfileSummary, favorited: Boolean, onClick: () -> U
         modifier = Modifier.fillMaxWidth(),
     ) {
         Column {
-            Box(Modifier.fillMaxWidth().aspectRatio(4.2f)) {
+            Box(Modifier.fillMaxWidth().aspectRatio(3.4f)) {
                 Box(Modifier.fillMaxSize().background(Brush.linearGradient(listOf(accent.copy(alpha = 0.75f), accent.copy(alpha = 0.18f)))))
+                if (item.banner != null) AsyncImage(item.banner, null, Modifier.fillMaxSize(), contentScale = ContentScale.Crop)
                 if (favorited) {
                     Row(Modifier.align(Alignment.TopEnd).padding(10.dp)) {
                         MiniBadge { Icon(Icons.Rounded.Favorite, "Favorite", Modifier.size(14.dp), tint = Color(0xFFFF4D7A)) }
