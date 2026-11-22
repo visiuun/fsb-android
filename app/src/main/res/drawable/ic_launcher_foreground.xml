@@ -1,0 +1,9 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp" android:height="108dp"
+    android:viewportWidth="108" android:viewportHeight="108">
+    <!-- Scalloped "cookie" shape (M3 Expressive) holding a sentinel eye -->
+    <path android:fillColor="#FF1D9BF0" android:pathData="M54,24 C58,24 60,28 63.5,29 C67,30 71,28 73.5,30.5 C76,33 74,37 75,40.5 C76,44 80,46 80,50 L80,58 C80,62 76,64 75,67.5 C74,71 76,75 73.5,77.5 C71,80 67,78 63.5,79 C60,80 58,84 54,84 C50,84 48,80 44.5,79 C41,78 37,80 34.5,77.5 C32,75 34,71 33,67.5 C32,64 28,62 28,58 L28,50 C28,46 32,44 33,40.5 C34,37 32,33 34.5,30.5 C37,28 41,30 44.5,29 C48,28 50,24 54,24 Z" />
+    <path android:fillColor="#FF000000" android:pathData="M36,54 C40,45 46.5,40.5 54,40.5 C61.5,40.5 68,45 72,54 C68,63 61.5,67.5 54,67.5 C46.5,67.5 40,63 36,54 Z" />
+    <path android:fillColor="#FFFFFFFF" android:pathData="M46,54 A8,8 0 1,0 62,54 A8,8 0 1,0 46,54 Z" />
+    <path android:fillColor="#FF000000" android:pathData="M50.5,54 A3.5,3.5 0 1,0 57.5,54 A3.5,3.5 0 1,0 50.5,54 Z" />
+</vector>
